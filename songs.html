@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>screen</title>
+        <meta name="viewport" content="width=device-width", initial-sclae="2">
+        
+</head>
+<style>
+    @media (max-width:100cm) {
+        .main{
+            width: 12.5cm;
+            height: max-content;   
+            background-color: black;
+            box-shadow: 0px 0px 12px 1px black;
+        
+        }
+    }
+    @media (max-width:18.28cm) {
+        .main{
+            width: 100%;
+            height: max-content;
+            background-color: black;
+        
+        }
+    }
+    body{
+            margin: 0px;
+            padding: 0px;
+            background-image: url(h.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }     
+        .menubar{
+            width: 100%;
+            height: 1.5cm;        
+            background-color: rgb(30,30,30);
+            align-items: center;
+            display: flex;
+            
+        }
+        .middlebar{
+            width: 100%;
+            height: max-content;
+        }
+        #search-item{
+            margin-top: 1cm;
+            background-color: rgb(30,30,30);
+            border: none;
+            border-radius: 60px;
+            height: 1cm;
+            width: 6cm;
+            padding-left: 5%;
+            padding-right: 6%;
+            font-weight: bold;
+            color: rgb(176, 176, 176);
+
+        }
+        .search{
+            border: 1px solid rgb(255, 177, 31);
+            color: rgb(255, 177, 31);
+            background-color: rgba(255, 177, 31, 0.147);
+            border-radius: 60px;
+            height: 0.99cm;
+            width: 2.5cm;
+            font-weight: bolder;
+            transition: 0.5s;
+        }
+        .search:hover{
+            background-color: rgb(255, 177, 31);
+            color: black;
+        }
+        ::placeholder{
+            color: rgb(176, 176, 176);
+        }
+        .logo{
+            font-weight: bolder;
+            color: rgb(255, 177, 31);
+            margin-left: 3%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+        }
+        .category{
+            background-color: rgba(255, 177, 31, 0.112);
+            color: rgb(255, 177, 31);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border: 1px solid rgb(255, 177, 31);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            height: 0.9cm;
+            width: 4cm;   
+            float: right;
+            margin-right: 0.5cm;   
+            font-weight: bolder;
+            transition: 0.5s;
+            
+            
+        }
+        .category:hover{
+            background-color: rgb(255, 177, 31);
+            color: black;
+        }
+        .app{
+            width: 100%;
+            height: 6cm;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            transition: 0.7s;
+            margin-top: 7px;
+            cursor: pointer;
+
+
+        }
+        .app:hover{
+            box-shadow: 0px 0px 4px 1px rgb(255, 177, 31);
+            
+        }
+        .intro{
+            width: 100%;
+            height: 0.8cm;
+            background-color: rgb(30,30,30);
+            border: none;
+            font-weight: bold;
+            color: rgb(255, 177, 31);
+            margin-top: 1cm;
+            padding-top: 4px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;                  
+            
+            
+        }
+        .lastbar{
+            text-align: left;
+            background-color: rgb(30,30,30);
+            width: 100%;
+            height: 4cm;
+            color: rgb(176, 176, 176);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .menulink{
+            position: relative;
+            text-decoration: none;
+            color: rgb(176, 176, 176);
+            font-weight: bold;
+            margin-left: 0.5cm;
+            transition: 0.7s;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .menulink:after{
+            content: '';
+            position: absolute;
+            background-color: rgb(255, 177, 31);
+            height: 3px;
+            left: 0;
+            width: 0px;
+            bottom: -10px;
+            padding-left: 0px 30px;
+            transition: 0.6s;
+            
+
+        }
+        .menulink:hover{
+            color: rgb(255, 177, 31);
+        }
+        .menulink:hover:after{
+            width: 100%;
+        }
+        .detail{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: left;
+            color: rgb(176, 176, 176);
+            display: flex;
+            font-weight: bold;
+            margin-top: 1%;
+            margin-left: 3%;
+        }
+        .product-list{
+            width: 90%;
+            height: max-content;
+        }
+
+
+    </style>
+    <body>
+        <center>
+    <div class="main">
+         <div class="menubar">
+            <h3 class="logo">mvoice</h3>
+         <a href="film.html" class="menulink" style="margin-left: 1.5cm;color: rgb(255, 177, 31);">Songs</a>
+         <a href="artist.html" class="menulink">Artist</a>
+         <a href="director.html" class="menulink" >Director</a>
+         <a href="director.html" class="menulink" >Producer</a>
+
+
+
+          </div>
+        
+          <div class="middlebar">
+            <center>
+                <form>
+            <input type="text" name="" id="search-item" placeholder="Type here to search" autocapitalize="sentence" onkeyup="search()">
+            <button class="search">search</button>  
+        </form>
+          
+        
+          <div class="intro">Advertisement</div>
+          
+              <br>
+            <div class="product-list" id="product-list">
+                <div class="product">
+                <img src="ariel.jpg" class="app"><br>
+                <label class="detail" >
+                    Awayz ft Danny nanone - Nasara <br> Duration: 3:27 <br>
+                Modified: 29/2/2023</label></div> <br>
+                <div class="product">
+                <img src="juno.jpg" class="app"><br>
+                <label class="detail" >Juno Kizigenza - Jaja <br> Duration: 3:27 <br>
+                    Modified: 29/2/2023</label> </div><br>
+                    <div class="product">
+                    <img src="ll.jpg" class="app"><br>
+                <label class="detail" >B Face feat. Alyn Sano - Ndakwikundira <br> Duration: 3:27 <br>
+                    Modified: 29/2/2023</label></div> <br>
+                
+            </div>
+
+
+      
+                 <button class="category">See more ></button> 
+             </center>
+    
+             <button class="intro" >No lyrics</button> <br> <br>
+    
+             <label class="detail">No Video Available Now</label> <br> <br>
+
+             <center>
+                 <div class="product">
+            
+            <button class="category">See more ></button>
+             </center>
+                 </div>
+                 <br><br>
+                          <div class="lastbar">
+                     <center>
+                <label style="color: rgb(176, 176, 176);">
+                    <br>
+               <b> @envatosoft copyright 2019</b>
+                </label>
+
+                     </center>
+                     <h3 style="color: rgb(255, 177, 31);margin-left: 0.6cm;margin-bottom: 1px;">CONATCT US</h3>
+                     <label style="margin-left: 0.6cm;margin-top: -27px;">Telephone:(+250) 788762976 <br></label>
+                <label style="margin-left: 0.6cm;margin-top: -27px;">Email: ndatimanah@gmail.com <br></label>
+                <label style="margin-left: 0.6cm;margin-top: -27px;">Website: www.envatosoft.com</label>
+                
+                
+            
+
+                          </div>
+    </div>
+    </center>
+    <script src="app.js"></script>
+    </body>
+
+</html>
